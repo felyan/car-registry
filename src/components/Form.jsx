@@ -1,7 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-export default function Form() {
+
+
+export default function Form() {    
+
+    const showHideForm = (e) => {
+        let wrapper = document.querySelector(".wrapper");
+        wrapper.classList.toggle("hide");
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#toggle').addEventListener('click', showHideForm);
+    });
+
     const { register, handleSubmit } = useForm();
     
     const onSubmit = data => {
@@ -28,8 +40,8 @@ export default function Form() {
       
     return (
         <>
-            <h2>Új autók felvitele</h2>
             <div className="wrapper">
+                <button id="toggle">Új autók felvitele</button>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input
                         {...register("producer", { required: true })}

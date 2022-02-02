@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cars from './Form';
 
 const Table = ({ tableData, headingColumns }) => {
     let tableClass = 'table-container__table';
@@ -9,6 +10,14 @@ const Table = ({ tableData, headingColumns }) => {
         let i = 0;
         
         for (const key in row) {
+            rowData.push({
+                key: headingColumns[i],
+                val: row[key]
+            });
+            i++;
+        }
+
+        for (const key in cars) {
             rowData.push({
                 key: headingColumns[i],
                 val: row[key]

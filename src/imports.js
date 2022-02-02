@@ -1,4 +1,4 @@
-import car from './components/Form';
+import cars from './components/Form';
 
 const carData = [
   {
@@ -33,6 +33,6 @@ const carData = [
   },
 ];
 
-carData.push(car);
+carData.push(cars);
 
 export {carData};

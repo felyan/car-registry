@@ -38,7 +38,7 @@ tr:nth-child(even) {
   box-sizing: border-box;
 }
 
-.wrapper button {
+button {
   background-color: green;
   color: white;
   width: 50%;
@@ -48,4 +48,8 @@ tr:nth-child(even) {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.hide {
+  display: none;
 }
