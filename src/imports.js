@@ -1,3 +1,5 @@
+import cars from './components/Form';
+
 const carData = [
   {
     id: 1,
@@ -30,5 +32,7 @@ const carData = [
     web_of_producer: 'https://www.toyota.hu/'
   },
 ];
+
+carData.push(cars);
 
 export {carData};

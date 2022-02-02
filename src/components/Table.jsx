@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Table = ({ tableData, headingColumns, title }) => {
+const Table = ({ tableData, headingColumns }) => {
     let tableClass = 'table-container__table';
 
     const data = tableData.map((row, index) => {
@@ -22,9 +22,6 @@ const Table = ({ tableData, headingColumns, title }) => {
 
     return <div>
         <div className="table-container">
-            <div className="table-container__title">
-                <h2>{title}</h2>
-            </div>
             <table className={tableClass}>
                 <thead>
                     <tr>
@@ -43,8 +40,7 @@ const Table = ({ tableData, headingColumns, title }) => {
 
 Table.propTypes = {
     tableData: PropTypes.arrayOf(PropTypes.object).isRequired,
-    headingColumns: PropTypes.arrayOf(PropTypes.string).isRequired,
-    title: PropTypes.string.isRequired
+    headingColumns: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Table;

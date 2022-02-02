@@ -18,3 +18,34 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+
+.wrapper {
+  width: 600px;
+  max-width:90%;
+  margin-bottom: 100px;
+}
+
+.wrapper input[type=text],
+.wrapper input[type=number],
+.wrapper input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.wrapper button {
+  background-color: green;
+  color: white;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
