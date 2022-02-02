@@ -7,6 +7,7 @@ const Table = ({ tableData, headingColumns }) => {
     const data = tableData.map((row, index) => {
         let rowData = [];
         let i = 0;
+        
         for (const key in row) {
             rowData.push({
                 key: headingColumns[i],
@@ -38,9 +39,18 @@ const Table = ({ tableData, headingColumns }) => {
   </div>;
 };
 
+
 Table.propTypes = {
     tableData: PropTypes.arrayOf(PropTypes.object).isRequired,
     headingColumns: PropTypes.arrayOf(PropTypes.string).isRequired
 }
+
+// if ((document.getElementTagName('td').innerHTML === '') || (document.getElementTagName('td').innerHTML === ) ) {
+    
+// }
+
+
+
+
 
 export default Table;

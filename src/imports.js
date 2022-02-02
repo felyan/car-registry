@@ -1,4 +1,4 @@
-import cars from './components/Form';
+import car from './components/Form';
 
 const carData = [
   {
@@ -8,7 +8,7 @@ const carData = [
     engine_displacement: 1900,
     color: 'fehér',
     design: 'sedan',
-    date_of_manufacture: 2019,
+    date_of_manufacture: 1541417888860,
     web_of_producer: 'https://wwww.audi.hu/'
   },
   {
@@ -18,7 +18,7 @@ const carData = [
     engine_displacement: 1600,
     color: 'szürke',
     design: 'hatchback',
-    date_of_manufacture: 2018,
+    date_of_manufacture: 1542364288860,
     web_of_producer: 'https://www.bmw.hu'
   },
   {
@@ -28,11 +28,11 @@ const carData = [
     engine_displacement: 1800,
     color: 'sötétkék',
     design: 'sedan',
-    date_of_manufacture: 2016,
+    date_of_manufacture: 1541414888860,
     web_of_producer: 'https://www.toyota.hu/'
   },
 ];
 
-carData.push(cars);
+carData.push(car);
 
 export {carData};

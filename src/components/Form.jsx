@@ -21,7 +21,7 @@ export default function Form() {
             document.querySelector('form').reset();            
         }
         document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('btn').addEventListener('click', addCar);
+            document.querySelector('#submit').addEventListener('click', addCar);
         });
     };
     
@@ -32,17 +32,17 @@ export default function Form() {
             <div className="wrapper">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input
-                        {...register("producer")}
+                        {...register("producer", { required: true })}
                         id="producer"
                         placeholder="Gyártó"
                         type="text" />
                     <input
-                        {...register("type")}
+                        {...register("type", { required: true })}
                         id="type"
                         placeholder="Típus"
                         type="text" />
                     <input
-                        {...register("engine_displacement")}
+                        {...register("engine_displacement", { required: true })}
                         id="engine_displacement"
                         placeholder="Motor hengerűrtartalom"
                         type="number" />
@@ -57,17 +57,19 @@ export default function Form() {
                         placeholder="Kivitel"
                         type="text" />
                     <input
-                        {...register("date_of_manufacture")}
+                        {...register("date_of_manufacture", { required: true })}
                         id="date_of_manufacture"
                         placeholder="Gyártási időpont"
                         type="date" />
                     <input
-                        {...register("web_of_producer")}
+                        {...register("web_of_producer",
+                            // pattern: ((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*),
+                        )}
                         id="web_of_producer"
                         placeholder="Gyártó weboldala"
                         type="text" />
-                    <button type="submit" value="Submit">Submit</button>
-                    <button type="reset" value="Reset">Reset</button>
+                    <button type="reset" value="Reset" id="delete">Mezők törlése</button>
+                    <button type="submit" value="Submit" id="submit">Mentés</button>
                 </form>
             </div>
         </>    
