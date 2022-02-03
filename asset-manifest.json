@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/car-registry/static/css/main.b2f275db.css",
-    "main.js": "/car-registry/static/js/main.66002905.js",
+    "main.css": "/car-registry/static/css/main.de954db2.css",
+    "main.js": "/car-registry/static/js/main.832a4e81.js",
     "index.html": "/car-registry/index.html",
-    "main.b2f275db.css.map": "/car-registry/static/css/main.b2f275db.css.map",
-    "main.66002905.js.map": "/car-registry/static/js/main.66002905.js.map"
+    "main.de954db2.css.map": "/car-registry/static/css/main.de954db2.css.map",
+    "main.832a4e81.js.map": "/car-registry/static/js/main.832a4e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2f275db.css",
-    "static/js/main.66002905.js"
+    "static/css/main.de954db2.css",
+    "static/js/main.832a4e81.js"
   ]
 }
