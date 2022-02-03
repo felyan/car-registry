@@ -54,8 +54,14 @@ Table.propTypes = {
     headingColumns: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
-// if ((document.getElementTagName('td').innerHTML === '') || (document.getElementTagName('td').innerHTML === ) ) {
-    
+// if ((document.getElementTagName('td').innerHTML === '') || (document.getElementTagName('td').innerHTML === carData.data ) ) {
+    // for (const key in cars) {
+    //         rowData.push({
+    //             key: headingColumns[i],
+    //             val: row[key]
+    //         });
+    //         i++;
+    //     }
 // }
 
 
